@@ -40,3 +40,5 @@ So there are three ways for developers to provide FFmpeg libraries for this crat
 ## Testing
 
 You can use `cargo test` to test the generated bindings. Want to see it works? There is a small example for you. Run `cargo run --example slice`.
+
+FFMPEG_HEADERS_DIR="$HOME/ffmpeg_build/include" FFMPEG_PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" cargo build

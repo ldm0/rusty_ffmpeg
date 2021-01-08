@@ -1,2 +1,2 @@
 [workspace]
-members = ["rusty_ffmpeg"]
+members = ["rusty_ffmpeg", "rusty_ffmpeg_linking"]
