@@ -582,6 +582,7 @@ jobs:
       - run: |
           ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/lib/
           ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/
+          ls D:\a\rusty_ffmpeg\rusty_ffmpeg\ffmpeg_prebuilt_cross\lib\
 
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
