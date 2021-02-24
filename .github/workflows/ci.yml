@@ -582,7 +582,7 @@ jobs:
       - run: |
           ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/lib/
           ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/
-          ls D:\a\rusty_ffmpeg\rusty_ffmpeg\ffmpeg_prebuilt_cross\lib\
+          ls D:\a\rusty_ffmpeg\rusty_ffmpeg\ffmpeg_prebuilt_cross\include\libswscale\
 
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -602,6 +602,9 @@ jobs:
           LIBCLANG_PATH: ${{ github.workspace }}/clang/lib
           LLVM_CONFIG_PATH: ${{ github.workspace }}/clang/bin/llvm-config
         run: |
+          ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/lib/
+          ls ${{ github.workspace }}/ffmpeg_prebuilt_cross/
+          ls D:\a\rusty_ffmpeg\rusty_ffmpeg\ffmpeg_prebuilt_cross\include\libswscale\
           cargo build --example slice
           copy ${{ github.workspace }}/ffmpeg_prebuilt_cross/lib/libffmpeg.dll .
           cargo run --example slice

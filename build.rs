@@ -362,6 +362,7 @@ fn dynamic_linking(env_vars: &EnvVars) {
 
     let binding_file_path = &format!("{}/binding.rs", env_vars.out_dir.as_ref().unwrap());
 
+    // Extract dll name and the dir the dll is in.
     let (ffmpeg_dll_name, ffmpeg_dll_dir) = {
         let mut ffmpeg_dll_path = PathBuf::from(ffmpeg_dll_path);
         // Without extension.
