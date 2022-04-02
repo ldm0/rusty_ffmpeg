@@ -17,10 +17,11 @@ static LIBS: Lazy<[&str; 7]> = Lazy::new(|| {
 });
 
 /// Whitelist of the headers we want to generate bindings
-static HEADERS: Lazy<[&str; 62]> = Lazy::new(|| {
+static HEADERS: Lazy<[&str; 63]> = Lazy::new(|| {
     [
         "libavcodec/avcodec.h",
         "libavcodec/avfft.h",
+        "libavcodec/bsf.h",
         "libavcodec/dv_profile.h",
         "libavcodec/vorbis_parser.h",
         "libavdevice/avdevice.h",
